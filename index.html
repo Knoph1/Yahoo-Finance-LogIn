@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yahoo Finance Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="promo">
+      <img src="logo.png" alt="Yahoo Finance Logo" class="logo" />
+      <h1>THE #1 FINANCE DESTINATION</h1>
+      <button class="cta">DISCOVER WHAT’S NEW</button>
+      <div class="hero-img">
+        <img src="phones.jpeg" alt="App preview" />
+      </div>
+    </section>
+    <section class="login-card">
+      <div class="card">
+        <img src="logo.png" alt="Yahoo!" class="card-logo" />
+        <h2>Sign in to Yahoo Mail</h2>
+        <p class="subtext">using your Yahoo account</p>
+        <form id="loginForm">
+          <label for="username" class="visually-hidden">Username, email, or mobile</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username, email, or mobile"
+            required
+          />
+          <p id="error-msg" class="error" aria-live="polite"></p>
+          <button type="submit" class="next-btn">Next</button>
+          <div class="links">
+            <a href="#">Stay signed in</a>
+            <a href="#">Forgot username?</a>
+          </div>
+          <button class="create-account" type="button">Create an account</button>
+          <div class="divider"><span>or</span></div>
+          <button class="social google" type="button">
+            <img src="google-icon.png" alt="Google icon" />
+            Sign in with Google
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

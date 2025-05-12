@@ -1,0 +1,34 @@
+/* Reset & Utility */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body, html { height: 100%; font-family: Arial, sans-serif; }
+.visually-hidden { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+
+/* Layout */
+.container { display: flex; height: 100%; }
+.promo { flex: 2; background: linear-gradient(135deg, #3b8d99, #6b6b83); color: white; padding: 2rem; position: relative; }
+.login-card { flex: 1; display: flex; align-items: center; justify-content: center; background: #f5f5f5; }
+
+/* Promo Section */
+.logo { width: 120px; }
+.promo h1 { margin: 2rem 0; font-size: 2.5rem; }
+.cta { background: #5e2ed5; border: none; color: white; padding: 0.75rem 1.5rem; border-radius: 25px; cursor: pointer; }
+.hero-img { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+.hero-img img { max-width: 70%; }
+
+/* Login Card */
+.card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 320px; text-align: center; }
+.card-logo { width: 60px; margin-bottom: 1rem; }
+.card h2 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+.subtext { font-size: 0.9rem; color: #555; margin-bottom: 1.5rem; }
+input[type="text"] { width: 100%; padding: 0.75rem; margin-bottom: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+.error { color: #e00; font-size: 0.85rem; height: 1em; margin-bottom: 0.75rem; }
+.next-btn { width: 100%; background: #5e2ed5; border: none; color: white; padding: 0.75rem; border-radius: 25px; cursor: pointer; font-size: 1rem; }
+.links { display: flex; justify-content: space-between; margin: 1rem 0; font-size: 0.85rem; }
+.links a { text-decoration: none; color: #5e2ed5; }
+.create-account { width: 100%; background: none; border: 2px solid #5e2ed5; padding: 0.75rem; border-radius: 25px; cursor: pointer; margin-bottom: 1rem; }
+.divider { display: flex; align-items: center; text-align: center; margin: 1rem 0; }
+.divider::before, .divider::after { content: ''; flex: 1; border-bottom: 1px solid #ccc; }
+.divider span { padding: 0 0.5rem; color: #777; }
+.social { display: flex; align-items: center; justify-content: center; width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 25px; cursor: pointer; font-size: 0.95rem; }
+.social img { width: 16px; margin-right: 0.5rem; }
+.social.google { background: white; }
